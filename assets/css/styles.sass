@@ -1,0 +1,78 @@
+
+// =============== GOOGLE FONTS ===============
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap')
+/*=============== 1- components --> Colors , --> mixins , etc... ===============*/
+@import 'components'
+/*========== components ==========*/
+@import 'media'
+/*=============== 2- General Style ===============*/
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+body
+    background: $gray-color
+    width: 100vw
+    // height: 100vh
+    direction: rtl
+    font-family: 'Amiri', serif
+img
+    width: 100%
+    padding: 6% 0
+a
+    text-decoration: none
+.header
+    justify-content: space-between
+    align-items: center
+    h3
+        font-weight: bold
+        font-size: 16px
+        a
+.parent-div
+    padding: 6% 0
+    .parent-content
+        .right
+            margin-bottom: 20px
+            .col-content
+                background: $white-color
+                padding: 28px 30px
+                border-radius: 5px
+                .body
+                    .div-content
+                        .img
+                            width: 80%
+                            margin: 0 auto
+                        p
+                            opacity: 0.7
+                            font-size: 13px
+                        .date
+                            opacity: 0.5
+                            font-size: 13px
+
+        .left
+            .col-content
+                background: $white-color
+                padding: 30px
+                border-radius: 5px
+                .body
+                    display: flex
+                    flex-direction: column
+                    gap: 20px
+                    .div-content
+                        gap: 20px
+                        .img
+                            width: 40%
+                            img
+                        .info
+                            width: 60%
+                            flex-direction: column
+                            justify-content: space-evenly
+                            h4
+                                font-size: 16px
+                            .dates
+                                opacity: 0.5
+                                font-size: 13px
+                                justify-content: space-between
+                                .date
+                                    svg
+                                    span
